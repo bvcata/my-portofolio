@@ -1,0 +1,24 @@
+.typewriter-text-wrapper {
+  margin-bottom: 12px;
+  .text {
+    background: linear-gradient(white 0 0) 0 0;
+    background-repeat: no-repeat;
+    color: #0000;
+    -webkit-background-clip: text;
+    background-clip: text;
+    white-space: pre-wrap;
+    font-size: 2rem;
+    background-size: calc(var(--textLength) * .75ch) 200%;
+    animation: typewriter calc(var(--textLength)/20 * 1s) linear;
+
+    &.finished {
+      animation-duration: calc(var(--textLength)/200 * 1s);
+    }
+  }
+
+  @keyframes typewriter {
+    from {
+      background-size: 0 200%;
+    }
+  }
+}

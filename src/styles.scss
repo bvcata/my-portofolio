@@ -1,1 +1,62 @@
 /* You can add global styles to this file, and also import other style files */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100svh;
+  margin: 0;
+  overflow: hidden;
+  background-color: black;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-size: cover;
+  background-position: center;
+
+  &:not(:has(app-home), :has(app-skills), :has(app-projects), :has(app-contact))::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 25vmin;
+    height: 25vmin;
+    margin: -12.5vmin 0 0 -12.5vmin;
+    border: 8px solid #bababa;
+    border-top-color: transparent;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+  }
+
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  &:has(app-skills) {
+    background-image: url('/images/tech-background.webp');
+  }
+
+  &:has(app-projects) {
+    background-image: url('/images/projects-background.webp');
+  }
+
+  &:has(app-home) {
+    background-image: url('/images/home-background.webp');
+  }
+
+  &:has(app-contact) {
+    background-image: url('/images/contact-background.webp');
+  }
+
+  button {
+    border: none;
+    background-color: transparent;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2rem;
+    color: white;
+    text-align: left;
+    cursor: pointer;
+  }
+}

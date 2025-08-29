@@ -1,0 +1,76 @@
+@use 'variables' as *;
+
+.projects-list-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  .project-container {
+    padding: 12px;
+    border: $card-border;
+    background-color: $card-background-color;
+    border-radius: 12px;
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+    animation: slide-appear 0.5s ease forwards;
+    animation-delay: var(--delay, 0s);
+    transform: translateX(-200%);
+
+    @keyframes slide-appear {
+      from {
+        transform: translateX(-200%);
+        scale: 0.4;
+      }
+      to {
+        transform: translateX(0);
+        scale: 1;
+      }
+    }
+
+    .project-header {
+      display: flex;
+      gap: 12px;
+      flex-direction: column;
+
+      @media (min-width: $mobile-layout-change) {
+        flex-direction: row;
+      }
+
+      img {
+        width: 150px;
+        height: 150px;
+        border-radius: 24px;
+        align-self: center;
+        background-color: wheat;
+      }
+
+      .project-info {
+        font-size: 1.6rem;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        justify-content: space-around;
+        flex-grow: 1;
+
+        hr {
+          border-color: rgba($color: white, $alpha: .1);
+        }
+
+        span {
+          font-weight: bold;
+        }
+      }
+    }
+
+    hr {
+      width: 100%;
+      margin: 0;
+      border-color: rgba($color: white, $alpha: .5);
+    }
+
+    .description {
+      font-size: 1.3rem;
+    }
+  }
+}

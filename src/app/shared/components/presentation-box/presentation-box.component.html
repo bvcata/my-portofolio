@@ -1,0 +1,6 @@
+<div class="presentation-box-wrapper" (animationend)="fadeDone.emit()">
+  <div class="presentation-box">
+    <ng-content></ng-content>
+  </div>
+  <button class="go-back" (click)="goBack()">Go back</button>
+</div>

@@ -1,0 +1,10 @@
+<div class="skills-list-wrapper">
+  @for(skill of skills(); track skill.title) {
+    <div class="skill-container" style="--delay: {{ $index * 0.13 }}s">
+      <div class="skill-image-container" [class]="skill.level">
+        <img [src]="skill.imagePath" alt="skill.title" class="skill-image" />
+      </div>
+      <div class="skill-title">{{ skill.title }}</div>
+    </div>
+  }
+</div>

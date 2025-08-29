@@ -1,0 +1,30 @@
+<div
+  class="conversation-box-wrapper"
+  (animationend)="isSlideDone = true"
+>
+  <div class="conversation-character">{{ characterName() }}</div>
+  <div class="conversation-box">
+    @if (isSlideDone ) {
+      @for (text of texts(); track text.length) {
+        <app-typewriter-text
+          [text]="text"
+          (talkingDone)="onTalkingDone()"
+        ></app-typewriter-text>
+      }
+      @if (isTalkingDone) {
+        <div class="animate-container">
+          <hr class="slide-in" />
+          @for (question of questions(); track $index) {
+            <button
+              class="question slide-in"
+              style="--delay: {{ $index * 0.1 }}s"
+              (click)="question.action()"
+            >
+              {{ question.text }}
+            </button>
+          }
+        </div>
+      }
+    }
+  </div>
+</div>

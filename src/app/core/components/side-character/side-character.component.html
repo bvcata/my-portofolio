@@ -1,0 +1,8 @@
+<div class="side-character-wrapper" (animationend)="onSlideDone($event)">
+  <img [src]="showingImage()" alt="side-character">
+  @if(isSlideDone() && talkText()) {
+    <div class="talk-box">
+      <app-typewriter-text [text]="talkText()!" (talkingDone)="talkDone.emit()"></app-typewriter-text>
+    </div>
+  }
+</div>

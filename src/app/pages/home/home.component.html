@@ -1,0 +1,9 @@
+<app-side-character
+  [sideCharacter]="sideCharacter"
+  (slideDone)="onSlideDone()"
+></app-side-character>
+<app-conversation-box
+  (talkingDone)="onTalkingDone()"
+  [questions]="questions"
+  [talkingText]="talkingText"
+></app-conversation-box>

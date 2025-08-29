@@ -1,0 +1,62 @@
+[
+  {
+    "title": "Angular",
+    "imagePath": "/images/angular.png",
+    "level": "gold"
+  },
+  {
+    "title": "HTML",
+    "imagePath": "/images/html.webp",
+    "level": "gold"
+  },
+  {
+    "title": "SCSS",
+    "imagePath": "/images/css-sass.webp",
+    "level": "gold"
+  },
+  {
+    "title": "Test Frameworks",
+    "imagePath": "/images/unit-test-frameworks.webp",
+    "level": "gold"
+  },
+  {
+    "title": "Version Control",
+    "imagePath": "/images/git.png",
+    "level": "gold"
+  },
+  {
+    "title": "Javascript Typescript",
+    "imagePath": "/images/js-ts.webp",
+    "level": "gold"
+  },
+  {
+    "title": "RXJS",
+    "imagePath": "/images/rxjs.webp",
+    "level": "gold"
+  },
+  {
+    "title": "Problem Solving",
+    "imagePath": "/images/problem-solving.webp",
+    "level": "gold"
+  },
+  {
+    "title": "Microservices",
+    "imagePath": "/images/microservices.webp",
+    "level": "silver"
+  },
+  {
+    "title": "NX",
+    "imagePath": "/images/nx.webp",
+    "level": "silver"
+  },
+  {
+    "title": ".NET",
+    "imagePath": "/images/dotnet.webp",
+    "level": "silver"
+  },
+  {
+    "title": "MongoDB",
+    "imagePath": "/images/mongo.webp",
+    "level": "bronze"
+  }
+]

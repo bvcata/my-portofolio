@@ -1,12 +1,14 @@
-import { Component, signal } from '@angular/core';
+import { Component, OnDestroy } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet],
   templateUrl: './app.html',
-  styleUrl: './app.scss'
+  styleUrl: './app.scss',
 })
-export class App {
-  protected readonly title = signal('my-portofolio');
+export class App implements OnDestroy{
+  ngOnDestroy(): void {
+    sessionStorage.clear();
+  }
 }

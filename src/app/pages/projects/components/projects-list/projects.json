@@ -1,0 +1,29 @@
+[
+  {
+    "imagePath": "/images/tekla.webp",
+    "name": "Trimble Tekla",
+    "role": "Full Stack Developer",
+    "duration": "3 years",
+    "technologies": "Angular, .NET, MongoDB",
+    "description":
+      "Trimble Tekla was a project consisting of two parts. One part was the desktop application and the other part was the web application that was integrated into the desktop application. I worked on the web application, which was an Angular application that used .NET Core for the backend."
+  },
+  {
+    "imagePath": "/images/aihr.webp",
+    "name": "AIHR",
+    "role": "Frontend Developer",
+    "duration": "2 years 10 months",
+    "technologies": "Angular",
+    "description":
+      "Trimble Tekla was a project consisting of two parts. One part was the desktop application and the other part was the web application that was integrated into the desktop application. I worked on the web application, which was an Angular application that used .NET Core for the backend."
+  },
+  {
+    "imagePath": "/images/cata-ezaru.png",
+    "name": "Cata Portofolio",
+    "role": "Owner",
+    "duration": "Ongoing",
+    "technologies": "Angular",
+    "description":
+      "This is my portofolio. It is built with the latest Angular features. Using zoneless change detection and signal-store for state management."
+  }
+]

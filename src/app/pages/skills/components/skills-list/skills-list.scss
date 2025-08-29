@@ -1,0 +1,115 @@
+@use 'variables' as *;
+
+.skills-list-wrapper {
+  display: flex;
+  gap: 40px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  .skill-container {
+    position: relative;
+    animation: slide-appear 0.5s ease forwards;
+    transform: translateY(0) translateX(0);
+    animation-delay: var(--delay, 0s);
+    opacity: 0;
+
+    @keyframes slide-appear {
+      from {
+        transform: translateY(-200%);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0) translateX(0);
+        opacity: 1;
+      }
+    }
+
+    &:hover {
+      scale: 1.1;
+      z-index: 2;
+      transition: scale 0.2s ease;
+
+      .skill-image-container {
+        &.gold + .skill-title::after {
+          border-bottom-color: rgba($color: gold, $alpha: .8);
+        }
+
+        &.silver + .skill-title::after {
+          border-bottom-color: rgba($color: silver, $alpha: .8);
+        }
+
+        &.bronze + .skill-title::after {
+          border-bottom-color: rgba($color: #cd7f32, $alpha: .8);
+        }
+      }
+
+      .skill-title {
+        display: block;
+        pointer-events: none;
+        min-width: calc(100% + 24px);
+        margin-top: 8px;
+        left: -12px;
+        border: $card-border;
+        border-radius: 0 0 12px 12px;
+        padding: 4px 12px;
+        border-top: none;
+        text-align: center;
+
+        &::after {
+          content: '';
+          position: absolute;
+          top: -122px;
+          right: 0;
+          bottom: 0;
+          left: -2px;
+          width: 100%;
+          background-color: $card-background-color;
+          z-index: -1;
+          border: $card-border;
+          border-radius: 12px;
+
+          @media (min-width: $mobile-layout-change) {
+            top: -172px;
+          }
+        }
+      }
+    }
+
+    .skill-image-container {
+      width: 100px;
+      height: 100px;
+      background-color: white;
+      border-radius: 100%;
+      padding: 15px;
+
+      &.gold {
+        box-shadow: 0 0 12px 4px gold;
+      }
+
+      &.silver {
+        box-shadow: 0 0 12px 4px silver;
+      }
+
+      &.bronze {
+        box-shadow: 0 0 12px 4px #cd7f32;
+      }
+
+      @media (min-width: $mobile-layout-change) {
+        width: 150px;
+        height: 150px;
+        padding: 20px;
+      }
+
+      .skill-image {
+        width: 100%;
+        aspect-ratio: 1;
+        object-fit: contain;
+      }
+    }
+
+    .skill-title {
+      display: none;
+      position: absolute;
+    }
+  }
+}

@@ -13,7 +13,16 @@
     "experimentalDecorators": true,
     "importHelpers": true,
     "target": "ES2022",
-    "module": "preserve"
+    "module": "preserve",
+    "baseUrl": "./src",
+    "paths": {
+      "@core/components": ["app/core/components/index.ts"],
+      "@core/store": ["app/core/store/index.ts"],
+      "@core/services": ["app/core/services/index.ts"],
+      "@core/interfaces": ["app/core/interfaces/index.ts"],
+      "@shared/components": ["app/shared/components/index.ts"],
+      "@shared/constants": ["app/shared/components/constants/index.ts"]
+    }
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,

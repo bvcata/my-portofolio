@@ -1,0 +1,136 @@
+.info-container {
+  .info-line {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    gap: 1rem;
+
+    a {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      text-decoration: none;
+      color: white;
+
+      &:has(img[alt="email"]) , &:has(img[alt="phone"]) {
+        padding: 12px;
+        border-radius: 12px ;
+        border: 1px solid white;
+
+        &:hover {
+          box-shadow: 0 0 5px 2px white;
+        }
+      }
+
+      &:has(img[alt="phone"]) {
+        &:hover img {
+          animation: shake 0.5s ease-in-out infinite;
+
+          @keyframes shake {
+            0% {
+              transform: rotate(0deg);
+            }
+            20% {
+              transform: rotate(-10deg);
+            }
+            30% {
+              transform: rotate(10deg);
+            }
+            40% {
+              transform: rotate(-10deg);
+            }
+            50% {
+              transform: rotate(10deg);
+            }
+            60% {
+              transform: rotate(-10deg);
+            }
+            70% {
+              transform: rotate(10deg);
+            }
+            80% {
+              transform: rotate(10deg);
+            }
+            100% {
+              transform: rotate(0deg);
+            }
+          }
+        }
+        img {
+          background-color: white;
+          border-radius: 8px;
+        }
+      }
+
+      &:has(img[alt="email"]) {
+        &:hover img {
+          animation: forward-slide 0.5s ease-in-out infinite;
+
+          @keyframes forward-slide {
+            0% {
+              transform: translateX(0);
+            }
+            50% {
+              transform: translateX(3px);
+            }
+            100% {
+              transform: translateX(0);
+            }
+          }
+        }
+        img {
+          margin-bottom: -5px;
+        }
+      }
+
+      &:has(img[alt="linkedin"]), &:has(img[alt="whatsapp"]), &:has(img[alt="telegram"]) {
+        padding: 12px 24px;
+        border: 1px solid #479e58;
+        border-left: none;
+        background: linear-gradient(to right, #479e58, transparent);
+        border-radius: 12px;
+        box-shadow: 3px 0px 10px 0px #00d0ff;
+
+        &:has(img[alt="linkedin"]) {
+          background: linear-gradient(to right, #009be8, transparent);
+          border-color: #009be8;
+          border-right-color: #ccf7ff;
+        }
+
+        &:has(img[alt="whatsapp"]) {
+          box-shadow: 3px 0px 10px 0px #23ff00;
+          border-right-color: #ccffe3;
+        }
+
+        &:has(img[alt="telegram"]) {
+          background: linear-gradient(to right, #009be8, transparent);
+          border-color: #009be8;
+          border-right-color: #ccf7ff;
+        }
+
+        &:hover {
+          transition: background-color 0.3s ease;
+
+          &:has(img[alt="linkedin"]) {
+            background-color: #0088ff;
+            border-right-color: #0088ff;
+          }
+
+          &:has(img[alt="whatsapp"]) {
+            background-color: #00ff00;
+          }
+
+          &:has(img[alt="telegram"]) {
+            background-color: #0088ff;
+            border-right-color: #0088ff;
+          }
+        }
+      }
+
+      img {
+        width: 32px;
+        height: 32px;
+      }
+    }
+  }
+}

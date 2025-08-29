@@ -1,0 +1,3 @@
+<div class="typewriter-text-wrapper" (click)="textRef.classList.add('finished')">
+  <span #textRef class="text" style="--textLength: {{ text().length }}" (animationend)="talkingDone.emit()">{{ text() }}</span>
+</div>

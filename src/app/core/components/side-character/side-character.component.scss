@@ -1,0 +1,46 @@
+@use 'variables' as *;
+
+.side-character-wrapper {
+  height: 100%;
+  float: right;
+  display: flex;
+  align-items: flex-end;
+  transform: translateX(0);
+  animation: slide-in 0.8s ease;
+
+  img {
+    max-height: 90%;
+    width: 100%;
+    height: 40%;
+
+    @media (min-width: $mobile-breakpoint) {
+      height: 90%;
+    }
+  }
+
+  @keyframes slide-in {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  .talk-box {
+    position: absolute;
+    width: 150%;
+      bottom: 3%;
+      left: -75%;
+    padding: 12px;
+    background: rgba(0, 0, 0, 0.5);
+    border: 4px solid white;
+    border-radius: 12px;
+
+    @media (min-width: $mobile-breakpoint) {
+      width: 80%;
+      bottom: 40%;
+      left: 5%;
+    }
+  }
+}

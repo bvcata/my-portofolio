@@ -1,0 +1,11 @@
+<app-side-character
+  [sideCharacter]="sideCharacter"
+  [talkText]="'Hover over a skill to see more details'"
+  (slideDone)="onSlideDone()"
+  (talkDone)="onTalkingDone()"
+></app-side-character>
+<app-presentation-box boBackRoute="/" (fadeDone)="isFadeDone.set(true)">
+  @if(isFadeDone()) {
+    <app-skills-list></app-skills-list>
+  }
+</app-presentation-box>

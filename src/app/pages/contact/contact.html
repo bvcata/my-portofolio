@@ -1,0 +1,33 @@
+<app-side-character
+  [sideCharacter]="sideCharacter"
+  talkText="Let's build the future together"
+  (slideDone)="onSlideDone()"
+  (talkDone)="onTalkingDone()"
+></app-side-character>
+<app-presentation-box boBackRoute="/" (fadeDone)="isFadeDone.set(true)">
+  @if(isFadeDone()) {
+    <div class="info-container">
+      <div class="info-line">
+        <span>Name:</span><span>Cata Ezaru</span>
+      </div>
+      <div class="info-line">
+        <span>Location:</span><span>Brasov, Romania</span>
+      </div>
+      <div class="info-line">
+        <a href="mailto:cataezaru@gmail.com"><img src="/images/email.webp" alt="email">cataezaru@gmail.com</a>
+      </div>
+      <div class="info-line">
+        <a href="tel:+40746993643"> <img src="/images/phone.webp" alt="phone">+40 746 993 643</a>
+      </div>
+      <div class="info-line">
+        <a href="https://www.linkedin.com/in/catalin-ezaru/">LinkedIn <img src="/images/linkedin.png" alt="linkedin"></a>
+      </div>
+      <div class="info-line">
+        <a href="https://wa.me/40746993643">WhatsApp <img src="/images/whatsapp.png" alt="whatsapp"></a>
+      </div>
+      <div class="info-line">
+        <a href="https://t.me/cataezaru">Telegram <img src="/images/telegram.png" alt="telegram"></a>
+      </div>
+    </div>
+  }
+</app-presentation-box>

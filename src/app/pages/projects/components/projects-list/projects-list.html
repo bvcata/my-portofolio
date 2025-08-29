@@ -1,0 +1,20 @@
+<div class="projects-list-wrapper">
+  @for(project of projects; track project.name) {
+  <button class="project-container" style="--delay: {{ $index * 0.13 }}s">
+    <div class="project-header">
+      <img src="{{ project.imagePath }}" alt="{{ project.name }}" />
+      <div class="project-info">
+        <div class="project-title"><span>Name:</span> {{ project.name }}</div>
+        <hr>
+        <div class="role"><span>Role:</span> {{ project.role }}</div>
+        <hr>
+        <div class="duration"><span>Duration:</span> {{ project.duration }}</div>
+        <hr>
+        <div class="technologies"><span>Tech:</span> {{ project.technologies }}</div>
+      </div>
+    </div>
+    <hr>
+    <div class="description">{{ project.description }}</div>
+  </button>
+  }
+</div>

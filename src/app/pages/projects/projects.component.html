@@ -1,0 +1,11 @@
+<app-side-character
+  [sideCharacter]="sideCharacter"
+  [talkText]="'Click on a project to see more details'"
+  (slideDone)="onSlideDone()"
+  (talkDone)="onTalkingDone()"
+></app-side-character>
+<app-presentation-box boBackRoute="/" (fadeDone)="isFadeDone = true">
+  @if(isFadeDone) {
+    <app-projects-list></app-projects-list>
+  }
+</app-presentation-box>
