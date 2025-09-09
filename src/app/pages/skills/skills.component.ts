@@ -14,8 +14,8 @@ import { SideCharacterStore } from '@core/store';
 export class SkillsComponent {
   public isFadeDone = signal<boolean>(false);
   public sideCharacter = {
-    idlePath: '/images/pocket-hand-idling.gif',
-    talkingPath: '/images/pocket-hand-talking.gif'
+    idlePath: 'images/pocket-hand-idling.gif',
+    talkingPath: 'images/pocket-hand-talking.gif'
   };
 
   private readonly _store = inject(SideCharacterStore);

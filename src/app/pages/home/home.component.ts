@@ -37,8 +37,8 @@ export class HomeComponent {
   ];
   public talkingText = '';
   public sideCharacter = {
-    idlePath: '/images/one-hand-idling.png',
-    talkingPath: '/images/one-hand-talking.gif',
+    idlePath: 'images/one-hand-idling.png',
+    talkingPath: 'images/one-hand-talking.gif',
   };
 
   private readonly _firstGreetingText = "Hi, I'm Cata\nHow can I help?";

@@ -13,8 +13,8 @@ import { SideCharacterStore } from '@core/store';
 export class ProjectsComponent {
   public isFadeDone = false;
   public sideCharacter = {
-    idlePath: '/images/one-hand-idling.png',
-    talkingPath: '/images/one-hand-talking.gif'
+    idlePath: 'images/one-hand-idling.png',
+    talkingPath: 'images/one-hand-talking.gif'
   };
 
   private readonly _store = inject(SideCharacterStore);

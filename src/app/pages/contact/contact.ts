@@ -11,8 +11,8 @@ import { PresentationBoxComponent } from "@shared/components";
 })
 export class Contact {
   public sideCharacter = {
-    idlePath: '/images/crossed-arms-idling.png',
-    talkingPath: '/images/crossed-arms-talking.gif'
+    idlePath: 'images/crossed-arms-idling.png',
+    talkingPath: 'images/crossed-arms-talking.gif'
   };
 
   private readonly _store = inject(SideCharacterStore);
