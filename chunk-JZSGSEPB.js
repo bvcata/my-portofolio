@@ -1,4 +1,4 @@
-import{a as d,b as u,d as h}from"./chunk-S27CQHC7.js";import{B as s,W as m,d as i,l as c,m as g,s as o,t as r,u as a}from"./chunk-DNK45LU6.js";var l="firstGreetingDone";var f=class p{questions=[{text:"I would like to know more about you",action:()=>{this.talkingText=`I am a Senior Frontend Developer with 6 years of experience, focused on crafting modern, scalable, and maintainable web applications using Angular.
+import{P as m,R as d,T as u,W as h,a as i,h as c,j as g,q as o,r,s as a,z as s}from"./chunk-JVGH33SA.js";var l="firstGreetingDone";var f=class p{questions=[{text:"I would like to know more about you",action:()=>{this.talkingText=`I am a Senior Frontend Developer with 6 years of experience, focused on crafting modern, scalable, and maintainable web applications using Angular.
 I bring vision and purpose to every project\u2014designing systems from the ground up, leading frontend architecture, and delivering clean, reusable code that supports long-term growth. I care deeply about UX, product direction, and building consistent design systems that create a high-quality experience.
 My skills include:
 Frontend
