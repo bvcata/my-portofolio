@@ -1,0 +1,8 @@
+@if(store.isOpen()) {
+  <div class="modal-wrapper" animate.leave="fade-out">
+    <div class="background" (click)="store.closeModal()"  animate.enter="fade-in"></div>
+    <div class="modal-container"  animate.enter="slide-in">
+      <ng-container [ngTemplateOutlet]="store.modalContent()"></ng-container>
+    </div>
+  </div>
+}

@@ -9,13 +9,13 @@ export interface SideCharacterState {
   animationState: AnimationState;
 }
 
-export const initialState: SideCharacterState = {
+export const sideCharacterInitialState: SideCharacterState = {
   animationState: AnimationState.IDLE,
 };
 
 export const SideCharacterStore = signalStore(
   { providedIn: 'root' },
-  withState(initialState),
+  withState(sideCharacterInitialState),
   withMethods((store) => ({
     startTalking() {
       patchState(store, { animationState: AnimationState.TALKING });

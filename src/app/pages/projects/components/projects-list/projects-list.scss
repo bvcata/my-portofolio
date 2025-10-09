@@ -74,3 +74,10 @@
     }
   }
 }
+
+.project-content {
+  overflow: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+

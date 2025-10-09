@@ -1,0 +1,28 @@
+
+.content-text {
+  font-size: 1.5rem;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.content-image {
+  width: 80%;
+  height: auto;
+  border-radius: 12px;
+  margin: 3% 10%;
+}
+
+.content-bullet-points {
+  li {
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+  }
+}
+
+.content-text, .content-image, .content-bullet-points {
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

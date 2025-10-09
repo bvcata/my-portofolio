@@ -1,20 +1,30 @@
 <div class="projects-list-wrapper">
   @for(project of projects; track project.name) {
-  <button class="project-container" style="--delay: {{ $index * 0.13 }}s">
+  <button
+    class="project-container"
+    style="--delay: {{ $index * 0.13 }}s"
+    (click)="openModal(project)"
+  >
     <div class="project-header">
       <img src="{{ project.imagePath }}" alt="{{ project.name }}" />
       <div class="project-info">
         <div class="project-title"><span>Name:</span> {{ project.name }}</div>
-        <hr>
+        <hr />
         <div class="role"><span>Role:</span> {{ project.role }}</div>
-        <hr>
+        <hr />
         <div class="duration"><span>Duration:</span> {{ project.duration }}</div>
-        <hr>
+        <hr />
         <div class="technologies"><span>Tech:</span> {{ project.technologies }}</div>
       </div>
     </div>
-    <hr>
+    <hr />
     <div class="description">{{ project.description }}</div>
   </button>
   }
 </div>
+
+<ng-template #projectDetailsModal>
+  <div class="project-content" scrollFade>
+    <app-content-viewer [items]="modalData"></app-content-viewer>
+  </div>
+</ng-template>

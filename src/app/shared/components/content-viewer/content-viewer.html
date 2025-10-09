@@ -1,0 +1,21 @@
+@for (item of items(); track $index) {
+  @let content = $any(item.content);
+  @switch (item.type) {
+    @case (contentType.Image) {
+      <img class="content-image" [src]="content.imagePath"  alt="">
+    }
+    @case (contentType.Text) {
+      <p class="content-text">{{ content.text }}</p>
+    }
+    @case (contentType.BulletPoints) {
+      @if(content.title) {
+        <h2>{{ content.title }}</h2>
+      }
+      <ul class="content-bullet-points">
+        @for (point of content.bulletPoints; track $index) {
+          <li>{{ point }}</li>
+        }
+      </ul>
+    }
+  }
+}

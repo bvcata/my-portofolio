@@ -5,8 +5,47 @@
     "role": "Full Stack Developer",
     "duration": "3 years",
     "technologies": "Angular, .NET, MongoDB",
-    "description":
-      "Trimble Tekla was a project consisting of two parts. One part was the desktop application and the other part was the web application that was integrated into the desktop application. I worked on the web application, which was an Angular application that used .NET Core for the backend."
+    "description": "Trimble Tekla was a project consisting of two parts. One part was the desktop application and the other part was the web application that was integrated into the desktop application. I worked on the web application, which was an Angular application that used .NET Core for the backend.",
+    "modalData": [
+      {
+        "type": 1,
+        "content": {
+          "text": "At Trimble, I was part of a frontend-focused team contributing to applications that supported MEP (Mechanical, Electrical, and Plumbing) design workflows. Two of my early projects included the Element Selector (for pipes and fittings) and the Product Selector (for pumps, valves, heating providers, and other MEP components). My work involved implementing new features, building pixel-perfect UIs, and ensuring high quality through both unit tests and end-to-end (E2E) tests."
+        }
+      },
+      {
+        "type": 1,
+        "content": {
+          "text": "As the team matured, I expanded beyond frontend work and also contributed to backend development. This experience prepared me to take ownership of a new flagship application, the Content Selector, designed to unify and replace earlier tools."
+        }
+      },
+      {
+        "type": 1,
+        "content": {
+          "text": "I acted as the main owner of the Content Selector project, responsible for both its architecture and implementation. The system was designed to be generic and extensible, capable of supporting multiple content types with limited shared properties, while remaining easy to expand with new functionality. Since the Content Selector was integrated into both Tekla Structures and a beta-stage web application, I also ensured that its design and styling matched both platforms, delivering a consistent user experience across products."
+        }
+      },
+      {
+        "type": 2,
+        "content": {
+          "title": "Key achievements:",
+          "bulletPoints": [
+            "Architected a scalable and extensible system, enabling new content types to be integrated in minutes of development.",
+            "Delivered a fast, user-friendly UI with advanced features such as a 3D viewer for selected content and reverse filtering.",
+            "Integrated the Angular-based web application with Trimble’s flagship desktop software, Tekla Structures, via CefSharp, enabling users to embed MEP content directly into their 3D building models.",
+            "Contributed to backend services to ensure smooth interoperability and scalability.",
+            "Maintained high code quality by writing unit tests and E2E tests, ensuring reliability and maintainability.",
+            "Mentored and coached newcomers in the team, supporting their onboarding and growth in both technical practices and product knowledge."
+          ]
+        }
+      },
+      {
+        "type": 1,
+        "content": {
+          "text": "The Content Selector represented a significant step forward in expanding Tekla Structures’ capabilities with MEP workflows. It enabled a faster, more flexible, and integrated way to work with complex building components, while aligning seamlessly with Trimble’s wider product ecosystem."
+        }
+      }
+    ]
   },
   {
     "imagePath": "images/aihr.webp",
@@ -14,8 +53,88 @@
     "role": "Frontend Developer",
     "duration": "2 years 10 months",
     "technologies": "Angular",
-    "description":
-      "Trimble Tekla was a project consisting of two parts. One part was the desktop application and the other part was the web application that was integrated into the desktop application. I worked on the web application, which was an Angular application that used .NET Core for the backend."
+    "description": "I worked as a freelance frontend developer at AIHR, migrating their platform from a third-party system to a custom Angular-based solution. I built responsive, user-friendly components, upgraded the project to the latest Angular version, and optimized legacy features for better performance and user experience. I also collaborated closely with cross-functional teams to ensure seamless integration and maintainable, high-quality code.",
+    "modalData": [
+      {
+        "type": 1,
+        "content": {
+          "text": "I was brought on as a Frontend Developer to design and build, from the ground up, a modern web application ecosystem for a company that had previously relied on a third-party provider for its main platform. Their existing website was fully managed under a restrictive external contract, which left them without access to the codebase and unable to implement new features or adapt the product to meet evolving business goals."
+        }
+      },
+      {
+        "type": 1,
+        "content": {
+          "text": "The company’s objective was to regain control by creating a fully in-house, scalable, and maintainable solution that mirrored the existing platform’s design but offered the flexibility to expand and improve it over time."
+        }
+      },
+      {
+        "type": 1,
+        "content": {
+          "text": "As part of a small, cross-functional team, I was responsible for the frontend architecture and development using Angular, ensuring that the applications were built with performance, maintainability, and long-term scalability in mind. I worked closely with backend developers to define and refine API endpoints, coordinate data flow, and determine the best distribution of business logic between frontend and backend layers. This close collaboration was key to delivering a cohesive and efficient system."
+        }
+      },
+      {
+        "type": 2,
+        "content": {
+          "title": "The final solution consisted of three interconnected Angular web applications:",
+          "bulletPoints": [
+            "Account Management App: Enabled users to manage personal and billing details, team memberships, and subscription settings in a streamlined, user-friendly interface."
+          ]
+        }
+      },
+      {
+        "type": 0,
+        "content": {
+          "imagePath": "images/account-management.webp"
+        }
+      },
+      {
+        "type": 0,
+        "content": {
+          "imagePath": "images/home.webp"
+        }
+      },
+      {
+        "type": 2,
+        "content": {
+          "bulletPoints": [
+            "Admin Panel: Built for internal teams to manage accounts, troubleshoot user issues, and maintain licenses, improving support efficiency and response time."
+          ]
+        }
+      },
+      {
+        "type": 2,
+        "content": {
+          "bulletPoints": [
+            "Learning Platform: Served as the core experience where members accessed and engaged with premium educational content."
+          ]
+        }
+      },
+      {
+        "type": 0,
+        "content": {
+          "imagePath": "images/lms.webp"
+        }
+      },
+      {
+        "type": 0,
+        "content": {
+          "imagePath": "images/lms-course.webp"
+        }
+      },
+      {
+        "type": 1,
+        "content": {
+          "text": "The project was a success, giving the company full ownership and autonomy over its platform. With a flexible architecture and maintainable codebase, they were now able to deploy updates faster, introduce new features confidently, and continuously evolve their product without external constraints."
+        }
+      },
+      {
+        "type": 1,
+        "content": {
+          "text": "This project was both technically challenging and rewarding — it combined solid engineering principles, close collaboration, and a tangible business impact that transformed how the company managed and delivered its digital experience."
+        }
+      }
+    ]
   },
   {
     "imagePath": "images/cata-ezaru.png",
@@ -23,7 +142,26 @@
     "role": "Owner",
     "duration": "Ongoing",
     "technologies": "Angular",
-    "description":
-      "This is my portofolio. It is built with the latest Angular features. Using zoneless change detection and signal-store for state management."
+    "description": "This is my portofolio. It is built with the latest Angular features. Using zoneless change detection and signal-store for state management.",
+    "modalData": [
+      {
+        "type": 1,
+        "content": {
+          "text": "I built my personal portfolio as both a showcase of my work and a demonstration of what’s possible with modern Angular architecture. The application leverages Angular’s zoneless mode and the Signal Store for state management, embracing the framework’s new reactivity model for fine-grained performance control. By removing Zone.js, I gained explicit control over change detection, allowing the app to stay lightweight, predictable, and highly responsive."
+        }
+      },
+      {
+        "type": 1,
+        "content": {
+          "text": "Architecturally, the portfolio was designed for scalability, maintainability, and long-term flexibility. It’s structured as a fully modular Angular application supported by a custom design system, ensuring consistent styling and an efficient development workflow. Since the site relies heavily on visuals, I also implemented optimized image handling using the WebP format, reducing file sizes and improving load times without compromising image quality — an important factor for delivering a seamless visual experience across devices."
+        }
+      },
+      {
+        "type": 1,
+        "content": {
+          "text": "The result is a clean, performant, and thoughtfully engineered portfolio that emphasizes both visual simplicity and technical excellence. Every aspect — from UI responsiveness to state flow — was intentionally crafted to reflect solid frontend engineering practices and a modern, forward-looking approach to Angular development."
+        }
+      }
+    ]
   }
 ]

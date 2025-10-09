@@ -1,5 +1,39 @@
+@use 'variables' as *;
+
 /* You can add global styles to this file, and also import other style files */
+
 
 * {
   box-sizing: border-box;
+}
+
+.faded-scroll::before,
+.faded-scroll::after {
+    content: '';
+    position: absolute;
+    width: calc(100% - 60px);
+    height: 20px;
+    pointer-events: none;
+    z-index: 10;
+    transition: opacity 0.1s ease;
+}
+
+.faded-scroll::before {
+    top: 30px;
+    background: linear-gradient(to bottom, $card-background-color, rgba(255, 255, 255, 0));
+    opacity: 0;
+}
+
+.faded-scroll::after {
+    bottom: 30px;
+    background: linear-gradient(to top, $card-background-color, rgba(255, 255, 255, 0));
+    opacity: 0;
+}
+
+.faded-scroll.has-top::before {
+    opacity: 1;
+}
+
+.faded-scroll.has-bottom::after {
+    opacity: 1;
 }

@@ -21,7 +21,8 @@
       "@core/services": ["app/core/services/index.ts"],
       "@core/interfaces": ["app/core/interfaces/index.ts"],
       "@shared/components": ["app/shared/components/index.ts"],
-      "@shared/constants": ["app/shared/components/constants/index.ts"]
+      "@shared/constants": ["app/shared/constants/index.ts"],
+      "@shared/directives": ["app/shared/directives/index.ts"]
     }
   },
   "angularCompilerOptions": {
